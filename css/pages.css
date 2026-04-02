@@ -7,7 +7,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: url(assets/images/hero-bg.png) no-repeat top/cover;
+    background: url(../assets/images/hero-bg.png) no-repeat top/cover;
 
 }
 
@@ -587,7 +587,7 @@
 }
 
 .about-grid .img-card {
-    background: url(assets/images/Richard-Gehse.jpg) center/cover no-repeat;
+    background: url(../assets/images/Richard-Gehse.jpg) center/cover no-repeat;
     height: 500px;
 }
 
@@ -651,7 +651,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: url(assets/images/service-hero.png) no-repeat top/cover;
+    background: url(../assets/images/service-hero.png) no-repeat top/cover;
 }
 
 .services-hero::before {
@@ -1056,7 +1056,7 @@
 
 /* Hero */
 .cases-hero {
-    background: url(assets/images/cases-hero.png) center/cover no-repeat;
+    background: url(../assets/images/cases-hero.png) center/cover no-repeat;
     padding: calc(var(--nav-height) + 100px) 0 100px;
     position: relative;
     overflow: hidden;

@@ -1,20 +1,11 @@
-/* ============================================
-   MAIN.CSS — Variables, Reset, Typography
-   ============================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/* --- CSS Variables --- */
 :root {
-    /* Colors — from your design */
     --color-dark: #000000;
     --color-dark-mid: #252b3b;
     --color-navy: #2c3550;
     --color-accent: #2C6EA4;
-    /* gold accent */
-    --color-accent-dim: #2C6EA4;
     --color-light: #f5f3ef;
     --color-white: #ffffff;
     --color-text: #2a2a2a;
@@ -23,21 +14,17 @@
     --color-border: #e2ddd6;
     --color-border-dark: #3a4156;
 
-    /* Typography */
     --font-display: 'Montserrat', Georgia, sans-serif;
     --font-body: 'Open Sans', sans-serif;
 
-    /* Spacing */
     --nav-height: 72px;
     --max-width: 1160px;
     --section-gap: 96px;
     --gutter: clamp(24px, 5vw, 80px);
 
-    /* Transitions */
     --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* --- Reset --- */
 *,
 *::before,
 *::after {
@@ -77,7 +64,6 @@ ol {
     list-style: none;
 }
 
-/* --- Typography Scale --- */
 h1,
 h2,
 h3,
@@ -88,21 +74,10 @@ h4 {
     color: var(--color-dark);
 }
 
-h1 {
-    font-size: clamp(2.4rem, 5vw, 3.8rem);
-}
-
-h2 {
-    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-}
-
-h3 {
-    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-}
-
-h4 {
-    font-size: 1.1rem;
-}
+h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+h4 { font-size: 1.1rem; }
 
 p {
     font-size: 1rem;
@@ -111,7 +86,6 @@ p {
     line-height: 1.75;
 }
 
-/* --- Layout Helpers --- */
 .container {
     width: 100%;
     max-width: var(--max-width);
@@ -123,7 +97,6 @@ p {
     padding: var(--section-gap) 0;
 }
 
-/* --- Buttons --- */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -143,12 +116,11 @@ p {
 .btn-primary {
     background: var(--color-accent);
     color: var(--color-light);
-    font: 'Montserrat', Georgia, sans-serif;
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background: var(--color-accent-dim);
+    opacity: 0.9;
     transform: translateY(-1px);
 }
 
@@ -174,7 +146,6 @@ p {
     color: var(--color-white);
 }
 
-/* --- Scroll Reveal --- */
 .reveal {
     opacity: 0;
     transform: translateY(28px);
@@ -186,34 +157,14 @@ p {
     transform: translateY(0);
 }
 
-.reveal-delay-1 {
-    transition-delay: 0.1s;
-}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
 
-.reveal-delay-2 {
-    transition-delay: 0.2s;
-}
-
-.reveal-delay-3 {
-    transition-delay: 0.3s;
-}
-
-.reveal-delay-4 {
-    transition-delay: 0.4s;
-}
-
-/* --- Utility --- */
-.text-accent {
-    color: var(--color-accent);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-light {
-    color: var(--color-text-light);
-}
+.text-accent { color: var(--color-accent); }
+.text-center { text-align: center; }
+.text-light { color: var(--color-text-light); }
 
 .label-overline {
     font-family: var(--font-body);
@@ -226,38 +177,6 @@ p {
     margin-bottom: 12px;
 }
 
-/* --- Page Hero (shared) --- */
-.page-hero {
-    background: var(--color-dark);
-    padding: calc(var(--nav-height) + 80px) 0 80px;
-    position: relative;
-    overflow: hidden;
-}
-
-.page-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url('assets/images/hero-bg.jpg') center/cover no-repeat;
-    opacity: 0.18;
-}
-
-.page-hero .container {
-    position: relative;
-}
-
-.page-hero h1 {
-    color: var(--color-white);
-    margin-bottom: 16px;
-}
-
-.page-hero p {
-    color: rgba(255, 255, 255, 0.65);
-    max-width: 560px;
-    font-size: 1.05rem;
-}
-
-/* --- CTA Band (shared) --- */
 .cta-band {
     background: var(--color-dark);
     padding: 80px 0;

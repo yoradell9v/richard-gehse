@@ -67,10 +67,8 @@
 
 .nav-links a {
     font-family: var(--font-body);
-    font-size: 0.78rem;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
     color: black;
     transition: color 0.2s;
     position: relative;
@@ -82,7 +80,7 @@
     bottom: -4px;
     left: 0;
     right: 0;
-    height: 1px;
+    height: 2px;
     background: var(--color-accent);
     transform: scaleX(0);
     transform-origin: left;

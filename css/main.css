@@ -69,15 +69,26 @@ h2,
 h3,
 h4 {
     font-family: var(--font-display);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2;
     color: var(--color-dark);
 }
 
-h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
-h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
-h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
-h4 { font-size: 1.1rem; }
+h1 {
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+}
+
+h3 {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+}
+
+h4 {
+    font-size: 1.1rem;
+}
 
 p {
     font-size: 1rem;
@@ -102,7 +113,7 @@ p {
     align-items: center;
     gap: 8px;
     font-family: var(--font-body);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -157,14 +168,33 @@ p {
     transform: translateY(0);
 }
 
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-1 {
+    transition-delay: 0.1s;
+}
 
-.text-accent { color: var(--color-accent); }
-.text-center { text-align: center; }
-.text-light { color: var(--color-text-light); }
+.reveal-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+    transition-delay: 0.4s;
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    color: var(--color-text-light);
+}
 
 .label-overline {
     font-family: var(--font-body);
